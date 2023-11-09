@@ -1,0 +1,13 @@
+ {
+    "cadena": "David",
+    "numero": "31",
+    "booleano": "true",
+    "arreglo": ["Montar bici", "programar", "Reparar Cosas"],
+    "objeto": {
+      "twitter": "@david.san414",
+      "email": "david.san0414@gmail.com"
+    },
+    "nulo": null
+  }
+
+  

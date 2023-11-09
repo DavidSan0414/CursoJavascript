@@ -1,0 +1,2 @@
+/*para importar codigo de otros archivos se hace a traves del metodo import/ export en el archivo html debe ir en la eqtiqueta script el codigo
+type=module y en el archivo de javascript debe ir la palabra expor en la funcion que se quiera exportar de lo contrario no funciona*/

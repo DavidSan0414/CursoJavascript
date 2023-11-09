@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Asincroniza en javascript</title>
+</head>
+
+<body>
+
+    <h1>Asincronia Javascrip</h1>
+
+    <script>
+
+        console.log("inicio")
+
+        // setTimeout(() => {
+        //     console.log("Ejecutando un set Tinme out, esto se ejecuta una sola vez")
+        // }, 3000);
+
+        // setInterval(() => {
+        //     console.log("Ejecutando un setInterval, esto se ejecuta cierta cantidad de tiempo")
+        // }, 1000);
+
+        let temporizador = setTimeout(() => {
+            console.log(new Date().toLocaleTimeString());
+        }, 1000);
+
+        clearTimeout(temporizador)
+
+        let temporizador1 = setInterval(() => {
+            console.log(new Date().toLocaleTimeString());
+        }, 1000);
+
+        clearInterval(temporizador1)
+
+
+
+    </script>
+
+</body>
+
+</html>
