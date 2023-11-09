@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estilos y variables CSS</title>
+</head>
+<body>
+
+    <h1>Manejo del DOM</h1>
+
+    <p id="que-es">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi perferendis, aut laudantium autem quia
+        perspiciatis animi sint ipsa vel asperiores amet nam magnam odit in magni vero! Itaque, maiores optio!
+    <nav id="menu">
+        <ul>
+            <li><a href="#">Seccion 1</a></li>
+            <li><a href="#">Seccion 2</a></li>
+            <li><a href="#">Seccion 3</a></li>
+            <li><a href="#">Seccion 4</a></li>
+            <li><a href="#">Seccion 5</a></li>
+        </ul>
+    </nav>
+    
+    <input type="text" name="nombre" placeholder="Nombre">
+    <a class="link-dom" data-id="1" data-description="Document Object Model" href="index.html"
+        style="background-color: #F7DF1E; color: #222;">DOM</a>
+    <section class="cards">
+        <figure class="card">
+            <img src="https://placeimg.com/200/200/tech" alt="Tech">
+            <figcaption>Tech</figcaption>
+        </figure>
+        <figure class="card">
+            <img src="https://placekitten.com/640/360" alt="Animals">
+            <figcaption>Animals</figcaption>
+        </figure>
+        <figure class="card">
+            <img src="https://placeimg.com/200/200/arch" alt="Architecture">
+            <figcaption>Architecture</figcaption>
+        </figure>
+        <figure class="card">
+            <img src="https://placeimg.com/200/200/people" alt="People">
+            <figcaption>People</figcaption>
+        </figure>
+        <figure class="card">
+            <img src="https://placeimg.com/200/200/nature" alt="Nature">
+            <figcaption>Nature</figcaption>
+        </figure>
+    </section>
+    <template id="template-card">
+        <figure class="card">
+            <img>
+            <figcaption></figcaption>
+        </figure>
+    </template>
+    <h3>Eventos en JavaScript</h3>
+    <h4>Manejadores de Eventos</h4>
+    <button onclick="holaMundo()">Evento con atributo HTML</button>
+    <br><br>
+    <button id="evento-semantico">Evento con manejador semántico</button>
+    <br><br>
+    <button id="evento-multiple">Evento con manejador múltiple</button>
+    <br><br>
+
+
+    <script src="index.js"></script>
+</body>
+</html>
