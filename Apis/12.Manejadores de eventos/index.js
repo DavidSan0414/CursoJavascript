@@ -1,4 +1,4 @@
-/* **********     Curso JavaScript: 72. DOM: Manejadores de Eventos - #jonmircha y Curso JavaScript: 73. DOM: Eventos con Parámetros y Remover Eventos      ********** */
+/* **********     Curso JavaScript: 72. DOM: Manejadores de Eventos y Curso JavaScript: 73. DOM: Eventos con Parámetros y Remover Eventos      ********** */
 /*
 Los eventos son los mecanismos que tenemos en JavaScript para controlar las acciones del usuario y definir el comportamiento del documento en cierto momento o cuando se cumplan ciertas condiciones.
 
@@ -13,7 +13,7 @@ https://developer.mozilla.org/en-US/docs/Web/Events
 
 function saludar(nombre = "Desconocid@") {
   alert(`Hola ${nombre}`);
-  console.log(event);
+  console.log(event);// se reemplaza por "e"
 }
 
 const $eventoSemantico = document.getElementById("evento-semantico"),
@@ -35,10 +35,14 @@ $eventoMultiple.addEventListener("click", (e) => {
   console.log(e.target);
   console.log(event);
 });
+
 $eventoMultiple.addEventListener("click", () => {
   saludar();
   saludar("David");
+  saludar("desde afuera")
 });
+
+
 
 const removerDobleClick = (e) => {
   alert(`Removiendo el evento de tipo ${e.type}`);
@@ -47,4 +51,13 @@ const removerDobleClick = (e) => {
   $eventoRemover.disabled = true;
 };
 
-$eventoRemover.addEventListener("dblclick", removerDobleClick); 
+$eventoRemover.addEventListener("dblclick", (e)=>{
+alert(`removiendo el evento de DobleClick"${e.type}`);
+console.log(e);
+
+});
+
+
+
+$eventoRemover.addEventListener("dblclick", removerDobleClick);  //********* de esta forma hace que el boton se bloquee o desaparezca con el atributo disable  *******************
+

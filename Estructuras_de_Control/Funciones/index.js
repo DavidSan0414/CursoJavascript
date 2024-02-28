@@ -20,7 +20,7 @@
     estoEsUnaFuncion();
     estoEsUnaFuncion();
     estoEsUnaFuncion(); 
-
+// en este ejemplo la funcion llega hasta el primer return y luego sale de la funcion es decir no se ejecuta el resto de codigo
     function unaFuncionQueDevuelveValor() {
       console.log("Uno");
       return 19;
@@ -33,11 +33,16 @@
 
     console.log(valorDeFuncion);
 
+
+    // aca se esta declarando una funcion y de una vez se le estan asignado atributos
     function saludar(nombre = "Desconocido", edad = 0) {
        console.log(`Hola mi nombre es ${nombre} y tengo ${edad} años.`);
      } 
 
+     // en este caso se estan sobreescribiendo los atributos, por pantalla seran los que se visualicen
     saludar("kEnAi", 7);
+
+    // aquise esta invocando la funcion con los valores que tiene por defecto asignados
     saludar();
 
     //Funciones declaradas VS funciones expresadas
